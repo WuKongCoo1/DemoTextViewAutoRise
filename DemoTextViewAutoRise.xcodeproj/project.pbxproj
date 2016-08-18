@@ -15,6 +15,8 @@
 		6777D4F41D65530400F44948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6777D4F21D65530400F44948 /* LaunchScreen.storyboard */; };
 		6777D4FF1D65530400F44948 /* DemoTextViewAutoRiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777D4FE1D65530400F44948 /* DemoTextViewAutoRiseTests.m */; };
 		6777D50A1D65530400F44948 /* DemoTextViewAutoRiseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777D5091D65530400F44948 /* DemoTextViewAutoRiseUITests.m */; };
+		6777D5191D65537900F44948 /* UITextView+AutoRise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777D5181D65537900F44948 /* UITextView+AutoRise.m */; };
+		6777D51C1D6564E700F44948 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777D51B1D6564E700F44948 /* ChatViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		6777D5051D65530400F44948 /* DemoTextViewAutoRiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTextViewAutoRiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6777D5091D65530400F44948 /* DemoTextViewAutoRiseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTextViewAutoRiseUITests.m; sourceTree = "<group>"; };
 		6777D50B1D65530400F44948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6777D5171D65537900F44948 /* UITextView+AutoRise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+AutoRise.h"; sourceTree = "<group>"; };
+		6777D5181D65537900F44948 /* UITextView+AutoRise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+AutoRise.m"; sourceTree = "<group>"; };
+		6777D51A1D6564E700F44948 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		6777D51B1D6564E700F44948 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,14 @@
 		6777D4E31D65530300F44948 /* DemoTextViewAutoRise */ = {
 			isa = PBXGroup;
 			children = (
+				6777D5171D65537900F44948 /* UITextView+AutoRise.h */,
+				6777D5181D65537900F44948 /* UITextView+AutoRise.m */,
 				6777D4E71D65530400F44948 /* AppDelegate.h */,
 				6777D4E81D65530400F44948 /* AppDelegate.m */,
 				6777D4EA1D65530400F44948 /* ViewController.h */,
 				6777D4EB1D65530400F44948 /* ViewController.m */,
+				6777D51A1D6564E700F44948 /* ChatViewController.h */,
+				6777D51B1D6564E700F44948 /* ChatViewController.m */,
 				6777D4ED1D65530400F44948 /* Main.storyboard */,
 				6777D4F01D65530400F44948 /* Assets.xcassets */,
 				6777D4F21D65530400F44948 /* LaunchScreen.storyboard */,
@@ -271,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6777D4EC1D65530400F44948 /* ViewController.m in Sources */,
+				6777D5191D65537900F44948 /* UITextView+AutoRise.m in Sources */,
+				6777D51C1D6564E700F44948 /* ChatViewController.m in Sources */,
 				6777D4E91D65530400F44948 /* AppDelegate.m in Sources */,
 				6777D4E61D65530400F44948 /* main.m in Sources */,
 			);

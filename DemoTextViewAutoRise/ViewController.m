@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "UITextView+AutoRise.h"
+
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewHeightConstraint;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -16,12 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [_textView addAutoRiseHandlerWithdefaultHeight:_textViewHeightConstraint.constant maxHeight:100 handler:^(CGFloat expectHeight) {
+        _textViewHeightConstraint.constant = expectHeight;
+        [_textView layoutIfNeeded];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end
